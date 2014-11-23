@@ -1,7 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
 ## This function calculate inverse of a square matrix. If inverse is already been calculated , it will return cached value. 
-## Write a short comment describing this function
 ## Below function does following things -  set the value of the matrix, get the value of the matrix, set the value of inverse of the matrix,  get the value of inverse of the matrix
 makeCacheMatrix <- function(x = matrix()) {
 m <- NULL
@@ -31,7 +28,7 @@ cacheSolve <- function(x, ...) {
     print("getting cached Inverse")
     return(m)
   }
-  ## If inverse has not been calculated ( m is null). It calculates below
+  ## If inverse has not been calculated ( i.e. m is null). It calculates inverse below.
   m <- solve(x$get())
   ## It cached value of matrix inverse
   x$setInverse(m)
